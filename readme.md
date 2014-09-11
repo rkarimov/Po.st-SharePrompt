@@ -17,7 +17,7 @@ Installation
 2. Add share-promt.min.js before </body> `<script src="share-promt.min.js"></script>`.
 3. Add component's script with options
 
-``` js
+```javascript
 <script>
 window.sharePromtConfig = {
   widgetPublisherKey: 'pubkey',
@@ -45,7 +45,7 @@ Click here to view this example: http://po.st/SharePromptLightbox
 
 The **SharePrompt:Lightbox** will appear in an overlay message in the center of your screen while it dims your article page content.
 
-``` js
+```javascript
 <script>
  window.sharePromtConfig = {
    widgetPublisherKey: 'test',
@@ -68,7 +68,7 @@ Click here to view this example: http://po.st/SharePromptToolbarBottom
 
 The **SharePrompt:ToolbarBottom** will appear at the very bottom of your page once your viewers have scrolled down a certain distance.
 
-``` js
+```javascript
 <script>
   window.sharePromtConfig = {
     widgetPublisherKey: 'demo',
@@ -96,7 +96,7 @@ Click here to view this example: http://po.st/SharePromptToolbarBottomRight
 
 The **SharePrompt:ToolbarBottomRight** will appear at the bottom-right of your page once your viewers have scrolled down a certain distance.
 
-``` js
+```javascript
 <script>
   window.sharePromtConfig = {
     widgetPublisherKey: 'demo',
@@ -124,7 +124,7 @@ Click here to view this example: http://po.st/SharePromptToolbarBottomLeft
 
 The **SharePrompt:ToolbarBottomLeft** will appear at the bottom-left of your page once your viewers have scrolled down a certain distance.
 
-``` js
+```javascript
 <script>
   window.sharePromtConfig = {
     widgetPublisherKey: 'demo',
