@@ -253,7 +253,7 @@ After init
 
 After the script load event fires, the code on the page will look like this example
 
-``` js
+```
 <div class="r1sp--toolbar r1sp--position_bottom-right r1sp--default r1sp--slide-right">
     <div class="r1sp__content"> [Option template] </div>
 </div>
