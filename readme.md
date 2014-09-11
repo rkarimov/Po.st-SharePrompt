@@ -29,7 +29,7 @@ window.sharePromtConfig = {
     buttons: ['facebook', 'twitter', 'mail', 'post'],
     size: 'large'
   },
-  template: '<aclass="r1sp__close"data-action="close"></a><divclass="r1sp__share-title">Share with friends:</div>{{widget}}'
+  template: '<a class="r1sp__close"data-action="close"></a><div class="r1sp__share-title">Share with friends:</div>{{widget}}'
 };
 </script>
 ```
