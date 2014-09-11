@@ -68,7 +68,7 @@ Click here to view this example: http://po.st/SharePromptToolbarBottom
 
 The **SharePrompt:ToolbarBottom** will appear at the very bottom of your page once your viewers have scrolled down a certain distance.
 
-```javascript
+```
 <script>
   window.sharePromtConfig = {
     widgetPublisherKey: 'demo',
