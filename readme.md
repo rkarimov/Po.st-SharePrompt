@@ -242,11 +242,11 @@ You can use your own element and styles. You just need set the attribute data-ac
 
 Example:
 
-  <a class="r1sp__close" data-action="close">
+    <a class="r1sp__close" data-action="close">
 
 or
 
-  <a class="yourownclass" data-action="close">
+    <a class="yourownclass" data-action="close">
 
 After init
 --
