@@ -14,7 +14,7 @@ Installation
 ------------
 
 1. Add r1sp.css to `<HEAD>` section `<link rel="stylesheet" href="r1sp.css" />`.
-2. Add share-promt.min.js before `</body>` `<script src="share-promt.min.js"></script>`.
+2. Add share-prompt.min.js before `</body>` `<script src="share-prompt.min.js"></script>`.
 3. Add component's script with options
 
 ```
