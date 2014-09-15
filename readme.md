@@ -118,7 +118,7 @@ The **SharePrompt:ToolbarBottomRight** will appear at the bottom-right of your p
 </script>
 ```
 
-#### 4. SharePrompt:Toolbar-Bottom-Right example
+#### 4. SharePrompt:Toolbar-Bottom-Left example
 
 Click here to view this example: http://po.st/SharePromptToolbarBottomLeft
 
@@ -276,17 +276,17 @@ The names of classes that appear in the re-generated code from the above after i
 </tr>
 <tr>
 <td>r1sp--position-[position]</td>
-<td>Optionposition</td>
+<td>Option position</td>
 <td>r1sp--position-bottom_right/r1sp--position-bottom</td>
 </tr>
 <tr>
 <td>r1sp--[skin]</td>
-<td>Optionskin</td>
+<td>Option skin</td>
 <td>r1sp--default/r1sp--yourownskin</td>
 </tr>
 <tr>
 <td>r1sp--[effect]</td>
-<td>Optioneffect</td>
+<td>Option effect</td>
 <td>
 <p>r1sp–fade (For fade)</p>
 <p>r1sp--slide-bottom (For effect:slide and position:bottom)</p>
