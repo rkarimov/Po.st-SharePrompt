@@ -1,150 +1,356 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="assets-example/kickstart.css">
-	<style>
-		body {
-			font-family: Helvetica,Arial,sans-serif;
-		}
-		.one-phrase {
-			display: inline-block;
-			height: 14px;
-			background-color: #edf5fa;
-			/*margin-right: 10px;*/
-		}
-		h1 {
-			clear: both;
-		}
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Case Study: Using Both Po.st Tools To Drive Powerful Results | Po.st Blog | The Most Advanced Social Sharing Platform</title>
 
 
-	</style>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script>
-		$(function() {
-			$('.create-content').each(function(){
-				var phrases = getRandomInt(3, 8);
-				init_content($(this),phrases)
-			});
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
 
-			var cImages = 0,
-				alImage = ['align-left', 'align-right', 'full-width'];
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="http://www.po.st/blog/wp-content/uploads/2014/04/favicon.png" />
 
-			for (var i = 0; i < cImages; i++) {
-				var getP = Math.floor((Math.random()* $('p.gen:not(.withimg)').length )+1);
-					getP = $('p.gen:not(.withimg)').eq(getP);
-				var alignImage = getRandomInt(0,2);
-				if(alignImage === 2){
-					getP.before('<p class="clearfix"><img src="http://http://lorempixel.com/850/' + getRandomInt(150,250) + '" class="' + alImage[alignImage] + '"></p>');
-				}
-				else {
-					getP.prepend('<img src="http://http://lorempixel.com/' + getRandomInt(150,350) + '/' + getRandomInt(150,250) + '" class="icon-border ' + alImage[alignImage] + '">');
-				}
-				getP.addClass('withimg');
+	<link rel="alternate" type="application/rss+xml" title="Po.st Blog | The Most Advanced Social Sharing Platform &raquo; Feed" href="http://www.po.st/blog/feed" />
+<link rel="alternate" type="application/rss+xml" title="Po.st Blog | The Most Advanced Social Sharing Platform &raquo; Comments Feed" href="http://www.po.st/blog/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Po.st Blog | The Most Advanced Social Sharing Platform &raquo; Case Study: Using Both Po.st Tools To Drive Powerful Results Comments Feed" href="http://www.po.st/blog/case-study-using-both-po-st-tools-to-drive-powerful-results/feed" />
+<link rel='stylesheet' id='post-plugin-css'  href='http://www.po.st/blog/wp-content/plugins/post/post-plugin.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='tooltipster-css'  href='http://www.po.st/blog/wp-content/plugins/subsolar-shortcodes.tmp/css/tooltipster.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='http://www.po.st/blog/wp-content/themes/Po.st/css/bootstrap.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css'  href='http://www.po.st/blog/wp-content/themes/Po.st/css/flexslider.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='nanoscroller-css'  href='http://www.po.st/blog/wp-content/themes/Po.st/css/nanoscroller.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fontello-css'  href='http://www.po.st/blog/wp-content/themes/Po.st/css/fontello.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='base-css'  href='http://www.po.st/blog/wp-content/themes/Po.st/css/screen.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='options-css'  href='http://www.po.st/blog/wp-content/themes/Po.st/css/options.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont0-css'  href='http://fonts.googleapis.com/css?family=Montserrat&#038;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='googlefont3-css'  href='http://fonts.googleapis.com/css?family=Asap&#038;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.po.st/blog/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.po.st/blog/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/imagesloaded.pkgd.min.js?ver=3.0.2'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/jquery.mobilemenu.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/jquery.fitvids.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/jquery.nanoscroller.min.js?ver=0.7.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.po.st/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.po.st/blog/wp-includes/wlwmanifest.xml" />
+<link rel='prev' title='Po.st 6 Month Sharing Trends &amp; Insights Report' href='http://www.po.st/blog/po-st-sharing-trends-insights-report' />
+<link rel='next' title='Optimize Your Online Content: Quick Tips You Haven’t Thought of Yet' href='http://www.po.st/blog/optimize-your-online-content-quick-tips-you-havent-thought-of-yet' />
+<meta name="generator" content="WordPress 3.8.1" />
+<link rel='canonical' href='http://www.po.st/blog/case-study-using-both-po-st-tools-to-drive-powerful-results' />
+<link rel='shortlink' href='http://www.po.st/blog/?p=2882' />
+<script type="text/javascript">
+(function ()
+{
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'http://i.po.st/static/v3/post-widget.js#publisherKey=40uc19f6ntm7998eoo1o';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+</script>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 
-			};
+<script>
+		var readmoreat = 'Read more at ',
+			customMessage ='<br/>Follow us on <a href="https://twitter.com/po_st" target="_blank">Twitter</a> / Like us on <a href="https://www.facebook.com/PostPlatform" target="_blank">Facebook</a> / Sign up for our <a href="http://info.radiumone.com/GlobalSubscriptions.html" target="_blank">Newsletter</a><br/>Get the Po.st sharing tool: <a href="http://po.st/TryItForFree" target="_blank">http://po.st/TryItForFree</a>';
 
-		});
-
-		function init_content(el, phrases){
-			var content = '';
-
-			for (var i = 0; i < phrases; i++) {
-				content += '<p class="gen clearfix">'
-				var words = getRandomInt(10, 30)
-				for (var k = 0; k < words; k++) {
-					var width = getRandomInt(30, 500)
-					content += '<span class="one-phrase" style="width:' + width + 'px"></span> ';
-				};
-				content += '</p>'
-			};
-
-			el.append(content);
-
-		}
-
-		function getRandomInt(min, max)
-		{
-		  return Math.floor(Math.random() * (max - min + 1)) + min;
-		}
-
+		var pwidget_config = {
+		   	i18n: {
+		    	readMore:  readmoreat + '{link}' + customMessage
+		   	},
+			trackAddressBar: true
+		};
 	</script>
+
+
 	<link rel="stylesheet" href="https://cdn.rawgit.com/radiumone/Po.st-SharePrompt/master/r1sp.css">
-</head>
-<body>
-	<div class="grid">
-		<div class="col_3">
+	</head>
+	<body class="single single-post postid-2882 single-format-standard">
 
-			<!-- Menu Vertical Left -->
-			<div  style="margin-top:98px; margin-bottom:30px">
-				<ul class="menu vertical">
-				<li><a href="lightbox.html">Lightbox</a></li>
-				<li><a href="toolbar-bottom.html">Bottom toolbar</a></li>
-				<li class="current"><a href="toolbar-bottom-right.html">Bottom right toolbar</a></li>
-				<li><a href="toolbar-bottom-left.html">Bottom left toolbar</a></li>
-				</ul>
-			</div>
+			<div class="row-fluid content-wrapper clearfix">
 
-			<div>
-				<p>
-					<a href="https://github.com/radiumone/Po.st-SharePrompt/zipball/master" class="button medium">Download ZIP</a>
-				</p>
-				<p>
-					<a href="https://github.com/radiumone/Po.st-SharePrompt/tarball/master" class="button medium">Download TAR</a>
-				</p>
-				<p>
-					<a href="https://github.com/radiumone/Po.st-SharePrompt" class="button medium">View On GitHub</a>
-				</p>
-			</div>
 
+				<header class="span3" id="main-header">
+
+
+
+					<div class="nano">
+
+						<div class="sidebar-content">
+
+							<div class="logo">
+
+
+								<a href="http://www.po.st/blog"><img src="http://www.po.st/blog/wp-content/uploads/2014/08/post-logo.png" alt="Po.st Blog | The Most Advanced Social Sharing Platform"></a>
+
+
+								<h2 class="logo-subtitle">The Most Advanced Social Sharing Platform</h2>
+
+							</div>
+
+
+
+
+
+						<div id="search-3" class="widget widget_search"><form action="http://www.po.st/blog" method="get" role="search">
+	<fieldset>
+		<div class="form-wrapper">
+			<span class="icon-search"></span>
+			<input type="text" class="s" name="s"  onblur="if(this.value=='')this.value='Search Here';" onfocus ="if(this.value=='Search Here')this.value='';"  value="Search Here">
+			<input type="submit" class="searchsubmit" value="Search">
 		</div>
-		<div class="col_9">
-			<div id="show-lightbox">
-				<h1>Po.st SharePrompt</h1>
-				<h4>Scroll Down &darr;</h4>
-				<!-- <p></p> -->
-				<div class="create-content">
-				</div>
-				<h1>Section 2</h1>
-				<div class="create-content">
-				</div>
-			</div>
-			<h1>Section 3</h1>
-			<div class="create-content">
-			</div>
-			<h1>Section 4</h1>
-			<div class="create-content">
-			</div>
-			<h1>Section 5</h1>
-			<div class="create-content">
-			</div>
+	</fieldset>
+</form></div><div id="categories-3" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+	<li class="cat-item cat-item-92"><a href="http://www.po.st/blog/category/events" title="View all posts filed under Events">Events</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://www.po.st/blog/category/featured-publishers" title="View all posts filed under Featured Publishers">Featured Publishers</a>
+</li>
+	<li class="cat-item cat-item-87"><a href="http://www.po.st/blog/category/in-the-news" title="View all posts filed under In the News">In the News</a>
+</li>
+	<li class="cat-item cat-item-85"><a href="http://www.po.st/blog/category/monetization-revenue" title="View all posts filed under Monetization &amp; Revenue">Monetization &amp; Revenue</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.po.st/blog/category/po-st" title="View all posts filed under Po.st">Po.st</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.po.st/blog/category/product-announcement" title="View all posts filed under Product Announcement">Product Announcement</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.po.st/blog/category/publisher-solutions" title="View all posts filed under Publisher Solutions">Publisher Solutions</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://www.po.st/blog/category/sharing-platform" title="View all posts filed under Sharing Tool">Sharing Tool</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.po.st/blog/category/social-media" title="View all posts filed under Social Media">Social Media</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.po.st/blog/category/social-sharing" title="View all posts filed under Social Sharing">Social Sharing</a>
+</li>
+	<li class="cat-item cat-item-84"><a href="http://www.po.st/blog/category/tech-support" title="View all posts filed under Tech Support">Tech Support</a>
+</li>
+	<li class="cat-item cat-item-83"><a href="http://www.po.st/blog/category/tips-tricks" title="View all posts filed under Tips &amp; Tricks">Tips &amp; Tricks</a>
+</li>
+	<li class="cat-item cat-item-86"><a href="http://www.po.st/blog/category/url-shortener" title="View all posts filed under URL Shortener">URL Shortener</a>
+</li>
+		</ul>
+</div><div id="tweeple_feed_widget-2" class="widget tweeple-feed-widget"><h2 class="widget-title">Po.st on Twitter</h2><div class="tweeple tweeple-feed tweeple-feed-widget"><div class="tweeple-inner"><ul class="tweets"><li class="tweet"><div class="tweet-wrap"><div class="tweet-text">The latest developments in social sharing technology: "7 things to look for in a <a class="twitter-link" href="https://twitter.com/search?q=%23sharing" target="_blank">#sharing</a> tool" <a href="http://t.co/L6G0AUpHNP" class="twitter-link" target="_blank">http://t.co/L6G0AUpHNP</a></div><div class="tweet-meta tweet-time"><div class="tweet-time tweet-meta"><span class="tweet-stamp"><a href="https://twitter.com/Po_st/status/504722670127439873" title="August 27, 2014" target="_blank">August 27, 2014</a></span> <span class="tweet-author">via <a href="https://twitter.com/Po_st" title="Po_st" target="_blank">Po_st</a></span></div></div></div><!-- .tweet-wrap (end) --></li></ul></div><!-- .tweeple-inner (end) --></div><!-- .tweeple-feed-widget (end) --></div><div id="nav_menu-2" class="widget widget_nav_menu"><h2 class="widget-title">Side Menu</h2><div class="menu-left-nav-container"><ul id="menu-left-nav" class="menu"><li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a title="Po.st Homepage" href="http://po.st/">Po.st Homepage</a></li>
+<li id="menu-item-1789" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1789"><a href="http://www.po.st/terms.html;jsessionid=45BD96C4EDF0282A8AF664AAD9443835">Terms and Conditions</a></li>
+<li id="menu-item-1790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1790"><a href="http://radiumone.com/legal/privacy.html">Privacy</a></li>
+<li id="menu-item-1791" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1791"><a href="http://support.po.st/hc/en-us">Help</a></li>
+<li id="menu-item-1792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1792"><a href="http://www.po.st/contact-us.html">Contact</a></li>
+</ul></div></div><div id="text-2" class="widget widget_text"><h2 class="widget-title">Social Links</h2>			<div class="textwidget"><div class="social_links">
+	<a href="https://twitter.com/po_st" class="twitter">Twitter</a>
+    <a href="https://www.facebook.com/PostPlatform" class="facebook">Facebook</a>
+</div>
+<div class="pw-widget pw-counter-none">
+	<a class="pw-button-post-share"></a>
+</div>
+<script src="http://i.po.st/static/v3/post-widget.js#publisherKey=40uc19f6ntm7998eoo1o" type="text/javascript"></script></div>
+		</div><div id="text-3" class="widget widget_text"><h2 class="widget-title">Copyright</h2>			<div class="textwidget">&copy; Copyright 2014 RadiumOne, Inc.
+
+<br>
+<br>
+All rights reserved. PO.ST<sup style="vertical-align: baseline; position: relative; top: -0.4em;">&reg;</sup> is a registered trademark of RadiumOne, Inc. and may not be used without written permission.</div>
 		</div>
 
+						</div><!-- end sidebar-content -->
+
+					</div><!-- end nano -->
+
+				</header><!-- main-header -->
+
+	<div class="span8 responsive-content right-content">
+
+
+
+	<div class="timeline"></div>
+
+	<article id="post-2882" class="post-2882 post type-post status-publish format-standard hentry category-featured-publishers category-po-st category-publisher-solutions category-sharing-platform category-social-media category-social-sharing category-tips-tricks post-bg post-list clearfix">
+
+		<div class="post-format-meta">
+			<span class="icon-doc-text"></span>
+<div class="meta-date">
+	<span class="time-day">19</span>
+	<span class="time-month">Aug</span>
+	<span class="time-year">2014</span>
+</div>
+</div>
+<span class="pointer"></span>
+
+	<div class="article-content">
+
+
+
+
+			<figure class="article-full-image">
+				<img width="760" height="575" src="http://www.po.st/blog/wp-content/uploads/2014/08/Sharing-and-Shortening-Blog-Image-v1-081414.jpg" class="attachment-featured-img-size wp-post-image" alt="Sharing and Shortening Blog Image v1 081414" />			</figure>
+
+
+		<div class="post-meta meta-top clearfix">
+			<span class="icon-user"><a href="http://www.po.st/blog/author/josh" title="Posts by Josh Suarez" rel="author">Josh Suarez</a></span>
+			<span class="icon-tags"><a href="http://www.po.st/blog/category/featured-publishers" title="View all posts in Featured Publishers" rel="category tag">Featured Publishers</a>, <a href="http://www.po.st/blog/category/po-st" title="View all posts in Po.st" rel="category tag">Po.st</a>, <a href="http://www.po.st/blog/category/publisher-solutions" title="View all posts in Publisher Solutions" rel="category tag">Publisher Solutions</a>, <a href="http://www.po.st/blog/category/sharing-platform" title="View all posts in Sharing Tool" rel="category tag">Sharing Tool</a>, <a href="http://www.po.st/blog/category/social-media" title="View all posts in Social Media" rel="category tag">Social Media</a>, <a href="http://www.po.st/blog/category/social-sharing" title="View all posts in Social Sharing" rel="category tag">Social Sharing</a>, <a href="http://www.po.st/blog/category/tips-tricks" title="View all posts in Tips &amp; Tricks" rel="category tag">Tips &amp; Tricks</a></span>
+		</div><!-- end post-meta -->
+
+		<div class="post-content">
+
+							<header>
+					<h1 class="post-title">Case Study: Using Both Po.st Tools To Drive Powerful Results</h1>
+				</header>
+
+			<div class="pw-widget" pw:twitter-via="Po_st">
+	  	<a class="pw-button-facebook"></a>
+		<a class="pw-button-twitter"></a>
+		<a class="pw-button-googleplus"></a>
+		<a class="pw-button-linkedin"></a>
+                <a class="pw-button-whatsapp"></a>
+		<a class="pw-button-post"></a>
+	</div><p dir="ltr">While each component of the Po.st platform is significant, combining both the URL Shortener with the Sharing Tool provides a very powerful instrument to capture and take advantage of these audience insights. Ultimately there is a wealth of sharing and engagement data that these two tools collect and can be utilized by brands and publishers. We decided to take a look at one of our customers that takes advantage of both Po.st tools and showcase the added benefits of an integrated sharing and social strategy.</p>
+<p dir="ltr">A world renowned culinary magazine utilizes both the Po.st Sharing Tool as well as the Po.st URL Shortener, capturing sharing activity and generating cohesive audience insights for their entire online audience. With one platform, all of their user data is collected in one spot, from those interacting with content directly through their website to those users engaging with their brand through social media. This data gathered through Po.st provides valuable insights that enables this brand to expand their overall audience pool by retargeting current and new users through paid media.</p>
+<p dir="ltr">The technology and features behind the Po.st Sharing Tool and URL Shortener capture these audience insights in a number of different ways. We&#8217;ve outlined several of these methods that they implement and described them below:</p>
+<table border="0">
+<tbody>
+<tr>
+<td>
+<h3>Shortened Links  &amp; Branded Vanity Domains</h3>
+<p>Shortened links from the Po.st URL Shortener that are embedded directly in their shared posts, Tweets, and other social media, drive engaged users directly to the the culinary brand&#8217;s company website. This brand in particular uses <a href="http://po.st/JWWhN1">a vanity domain</a> to keep their social media links and posts short and sweet, as well as provide the added benefit of an extra bit of branding in each link. In this way they captures new users who discover their content through social media and drives them to interact with their brand further on their website.</td>
+<td></td>
+<td width="40%"><img class="size-full wp-image-2821 alignleft" alt="socialmedia" src="http://www.po.st/blog/wp-content/uploads/2014/06/socialmedia.jpg" width="400" /></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>
+<h3>Social Sharing Buttons</h3>
+<p>Once a user is interacting with content directly on the brand&#8217;s website, the Po.st Sharing Tool provides engaged users with a multitude of options to share this content with their social networks. Whether you Pin It, Tweet it, or even share it through Reddit, Po.st provides each user a way to connect with their friends on social media. From clicking on the brand&#8217;s shortened link, to arriving on the culinary brand&#8217;s web page, to sharing a new article they may have found on their website, Po.st can aggregate all of this engagement across channels.</td>
+<td></td>
+<td width="40%">
+<p style="text-align: center;"><span style="line-height: 1.5em;"><img class="alignleft" style="border: 1px solid black;" alt="Sharing Tool" src="http://www.po.st/blog/wp-content/uploads/2014/08/Sharing-Tool.png" width="500" height="368" /></span></p>
+</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>
+<h3>Branded Vanity Domains Integrated With Social Sharing Buttons</h3>
+<p>The company also utilizes their branded vanity domain outside of their own social media links created by the Po.st URL Shortener. Through the Po.st Sharing Tool, Po.st offers the ability for users who are sharing their content through Twitter or LinkedIn to<a href="http://po.st/VCi6v2"> show vanity domains shortened links directly in their shares</a>.</td>
+<td></td>
+<td width="40%"><img class="size-full wp-image-3069 alignleft" style="border: 1px solid black;" alt="Screen Shot 2014-08-18 at 5.09.43 PM" src="http://www.po.st/blog/wp-content/uploads/2014/08/Screen-Shot-2014-08-18-at-5.09.43-PM.png" width="255" height="87" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>
+<h3>After-the-Share Ad Units</h3>
+<p>The Po.st Sharing Tool has the ability to show <a href="http://po.st/4OGLIy">After-the-Share units</a> that monetize the most engaged users who enjoy the content and want to share it with their friends. For this brand since each share unit includes a custom vanity domain short link, those users who click that shared link can also be targeted with the brand&#8217;s paid media from URL data as well.</td>
+<td></td>
+<td width="40%"><img style="border: 1px solid black;" alt="Share Unit" src="http://www.po.st/blog/wp-content/uploads/2014/08/Share-Unit.png" width="500" height="352" />&nbsp;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td>
+<h3>Copy &amp; Paste Sharing</h3>
+<p>The Po.st Sharing Tool also provides a unique feature that captures users who share content by copying-and-pasting sections of an article or page. This widget pops up when readers highlight a section of text, prompting them to share that information. This helps boost the number of shares of the culinary brand&#8217;s content, increasing the number of users receiving and reading their articles.</td>
+<td></td>
+<td width="40%"><img style="border: 1px solid black;" alt="Copy_Paste Feature" src="http://www.po.st/blog/wp-content/uploads/2014/08/Copy_Paste-Feature.png" width="500" height="246" /></td>
+</tr>
+</tbody>
+</table>
+<p dir="ltr">When you combine the Po.st Sharing Tool with the Po.st URL Shortener you begin to truly capture your entire audience, giving you the most comprehensive insights from all sharing and social engagement activity. Whether they are users who are spending a lot of time on your site, or people just discovering your content through social, the power of Po.st gives you the opportunity to get to know your newest as well as most loyal consumers.</p>
+<p dir="ltr">Overall this culinary magazine brand utilizes both the Po.st Sharing Tool as well as the Po.st URL Shortener in tandem to drive user engagement with their content. With a significant increase in engagement since they began using Po.st last fall, it is safe to say that they are savoring the sharing!</p>
+<p dir="ltr">The Po.st platform is easy to implement, you can begin using the <a href="https://www.po.st/get-it">Sharing Tool</a> by adding a few lines of code to your site, and start using the <a href="https://re.po.st/register">URL Shortener</a> by signing up today.</p>
+
+
+
+		</div><!-- end post-content -->
+
+
+		<div class="post-meta meta-bottom">
+
+
+			<span class="icon-tag">No Tags</span>
+
+
+		</div><!-- end post-meta -->
+
+
+
+		<ul class="single-post-navigation clearfix">
+			<li class="nav-prev"><a href="http://www.po.st/blog/po-st-sharing-trends-insights-report" rel="prev">Po.st 6 Month Sharing Trends &#038; Insights Report</a></li>
+			<li class="nav-next"><a href="http://www.po.st/blog/optimize-your-online-content-quick-tips-you-havent-thought-of-yet" rel="next">Optimize Your Online Content: Quick Tips You Haven’t Thought of Yet</a></li>
+		</ul>
+
+
+	</div><!-- end article-content -->
+
+</article>
+
+</div><!-- end span8 -->
+<footer class="clearfix">
+
+	<div class="footer-container">
+				&copy; 2014 | <a href=" "><span class="footer-title">Po.st Blog | The Most Advanced Social Sharing Platform</span></a>
 	</div>
-    <hr>
-	<p class="center">
-		Footer
-	</p>
-    <script>
-           window.sharePromtConfig = {
 
-               widgetPublisherKey: 'test',
+</footer>
 
-               type: 'toolbar',
-               position: 'bottom-right',
-               effect: 'slide',
-               offset_show: -1000,
-               show: 'scroll.end',
-               post_widget: {
-                   buttons: [{id:'facebook', look:'native'}, {id:'twitter', look:'native'}, {id:'mail', look:'native'}, {id:'post-share', look:'native'}],
-                   size: 'small'
-               },
+</div><!--end content-wrapper-->
 
-               template: '<a class="r1sp__close" data-action="close"></a><div class="r1sp__share-inl">Share with friends:</div> <div class="r1sp__widget-inlineb">{{widget}}</div>'
-           };
-       </script>
-<script src="https://rawgit.com/radiumone/Po.st-SharePrompt/master/share-prompt.min.js"></script>
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>Munchkin.init('207-XLI-813');</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27751151-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><script type='text/javascript' src='http://www.po.st/blog/wp-content/plugins/subsolar-shortcodes.tmp/js/jquery.tooltipster.min.js?ver=2.1.4'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/plugins/subsolar-shortcodes.tmp/js/custom.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/bootstrap.min.js?ver=2.3.2'></script>
+<script type='text/javascript' src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/respond.min.js?ver=1.1.0'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/retina.js?ver=0.0.2'></script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/jquery.flexslider-min.js?ver=2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sdesigns = {"navigate":"Navigate To..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.po.st/blog/wp-content/themes/Po.st/js/scripts.js?ver=1.0'></script>
+
+<script>
+  window.sharePromtConfig = {
+    widgetPublisherKey: 'demo',
+    type: 'toolbar',
+    position: 'bottom-right',
+    overlay: true,
+    offset_position: {
+      bottom: 40
+    },
+    effect: 'slide',
+    offset_show: -1000,
+    show: 'scroll.end',
+    post_widget: {
+      buttons: [{id:'facebook', look:'native'}, {id:'twitter', look:'native'}, {id:'mail', look:'native'}, {id:'post-share', look:'native'}],
+      size: 'small'
+    },
+    template: '<a class="r1sp__close" data-action="close"></a><div class="r1sp__share-inl">Share with friends:</div> <div class="r1sp__widget-inlineb">{{widget}}</div>'
+  };
+</script>
+<script src="https://cdn.rawgit.com/radiumone/Po.st-SharePrompt/master/share-prompt.min.js"></script>
 
 </body>
 </html>
