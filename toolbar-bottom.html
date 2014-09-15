@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="assets-example/kickstart.css">
+	<style>
+		body {
+			font-family: Helvetica,Arial,sans-serif;
+		}
+		.one-phrase {
+			display: inline-block;
+			height: 14px;
+			background-color: #edf5fa;
+			/*margin-right: 10px;*/
+		}
+		h1 {
+			clear: both;
+		}
+
+
+	</style>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('.create-content').each(function(){
+				var phrases = getRandomInt(3, 8);
+				init_content($(this),phrases)
+			});
+
+			var cImages = 0,
+				alImage = ['align-left', 'align-right', 'full-width'];
+
+			for (var i = 0; i < cImages; i++) {
+				var getP = Math.floor((Math.random()* $('p.gen:not(.withimg)').length )+1);
+					getP = $('p.gen:not(.withimg)').eq(getP);
+				var alignImage = getRandomInt(0,2);
+				if(alignImage === 2){
+					getP.before('<p class="clearfix"><img src="http://http://lorempixel.com/850/' + getRandomInt(150,250) + '" class="' + alImage[alignImage] + '"></p>');
+				}
+				else {
+					getP.prepend('<img src="http://http://lorempixel.com/' + getRandomInt(150,350) + '/' + getRandomInt(150,250) + '" class="icon-border ' + alImage[alignImage] + '">');
+				}
+				getP.addClass('withimg');
+
+			};
+
+		});
+
+		function init_content(el, phrases){
+			var content = '';
+
+			for (var i = 0; i < phrases; i++) {
+				content += '<p class="gen clearfix">'
+				var words = getRandomInt(10, 30)
+				for (var k = 0; k < words; k++) {
+					var width = getRandomInt(30, 500)
+					content += '<span class="one-phrase" style="width:' + width + 'px"></span> ';
+				};
+				content += '</p>'
+			};
+
+			el.append(content);
+
+		}
+
+		function getRandomInt(min, max)
+		{
+		  return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+	</script>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/radiumone/Po.st-SharePrompt/master/r1sp.css">
+</head>
+<body>
+	<div class="grid">
+		<div class="col_3">
+
+			<!-- Menu Vertical Left -->
+			<div  style="margin-top:98px; margin-bottom:30px">
+				<ul class="menu vertical">
+				<li><a href="lightbox.html">Lightbox</a></li>
+				<li class="current"><a href="toolbar-bottom.html">Bottom toolbar</a></li>
+				<li><a href="toolbar-bottom-right.html">Bottom right toolbar</a></li>
+				<li><a href="toolbar-bottom-left.html">Bottom left toolbar</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<p>
+					<a href="https://github.com/radiumone/Po.st-SharePrompt/zipball/master" class="button medium">Download ZIP</a>
+				</p>
+				<p>
+					<a href="https://github.com/radiumone/Po.st-SharePrompt/tarball/master" class="button medium">Download TAR</a>
+				</p>
+				<p>
+					<a href="https://github.com/radiumone/Po.st-SharePrompt" class="button medium">View On GitHub</a>
+				</p>
+			</div>
+
+		</div>
+		<div class="col_9">
+			<div id="show-lightbox">
+				<h1>Po.st SharePrompt</h1>
+				<h4>Scroll Down &darr;</h4>
+				<!-- <p></p> -->
+				<div class="create-content">
+				</div>
+				<h1>Section 2</h1>
+				<div class="create-content">
+				</div>
+			</div>
+			<h1>Section 3</h1>
+			<div class="create-content">
+			</div>
+			<h1>Section 4</h1>
+			<div class="create-content">
+			</div>
+			<h1>Section 5</h1>
+			<div class="create-content">
+			</div>
+		</div>
+
+	</div>
+    <hr>
+	<p class="center">
+		Footer
+	</p>
+    <script>
+            window.sharePromtConfig = {
+
+                widgetPublisherKey: 'test',
+
+                type: 'toolbar',
+                position: 'bottom',
+                overlay: true,
+                offset_position: {
+                	bottom:0
+                },
+                effect: 'slide',
+                offset_show: -1000,
+                show: 'scroll.end',
+                post_widget: {
+                    buttons: [{id:'facebook', look:'native'}, {id:'twitter', look:'native'}, {id:'mail', look:'native'}, {id:'post-share', look:'native'}],
+                    size: 'small'
+                },
+                template: '<div class="r1sp__share-inl r1sp__share-inl--small">Share with friends:</div> <div class="r1sp__widget-inlineb">{{widget}}</div>'
+            };
+        </script>
+<script src="https://rawgit.com/radiumone/Po.st-SharePrompt/master/share-prompt.min.js"></script>
+
+</body>
+</html>
