@@ -19,7 +19,7 @@ Installation
 
 ```
 <script>
-window.sharePromptConfig = {
+window.sharePromtConfig = {
   widgetPublisherKey: 'pubkey',
   type: 'toolbar',
   position: 'bottom-right',
@@ -47,7 +47,7 @@ The **SharePrompt:Lightbox** will appear in an overlay message in the center of 
 
 ```
 <script>
- window.sharePromptConfig = {
+ window.sharePromtConfig = {
    widgetPublisherKey: 'test',
    type: 'lightbox',
    overlay: true,
@@ -70,7 +70,7 @@ The **SharePrompt:ToolbarBottom** will appear at the very bottom of your page on
 
 ```
 <script>
-  window.sharePromptConfig = {
+  window.sharePromtConfig = {
     widgetPublisherKey: 'demo',
     type: 'toolbar',
     position: 'bottom',
@@ -98,7 +98,7 @@ The **SharePrompt:ToolbarBottomRight** will appear at the bottom-right of your p
 
 ```
 <script>
-  window.sharePromptConfig = {
+  window.sharePromtConfig = {
     widgetPublisherKey: 'demo',
     type: 'toolbar',
     position: 'bottom-right',
@@ -126,7 +126,7 @@ The **SharePrompt:ToolbarBottomLeft** will appear at the bottom-left of your pag
 
 ```
 <script>
-  window.sharePromptConfig = {
+  window.sharePromtConfig = {
     widgetPublisherKey: 'demo',
     type: 'toolbar',
     position: 'bottom-left',
@@ -157,7 +157,7 @@ Options
 </tr>
 <tr>
 <td>type</td>
-<td><strong>toolbar</strong>/lightbox</td>
+<td>toolbar/lightbox</td>
 <td>
 <p>Component type:</p>
 <p>lightbox</p>
@@ -167,9 +167,9 @@ Options
 <tr>
 <td>position</td>
 <td>
-<p><strong>bottom</strong>/bottom-right/bottom-left/top/top-left/top-right</p>
+<p>bottom/bottom-right/bottom-left/top/top-left/top-right</p>
 </td>
-<td><strong>Only for the toolbar.</strong> Allows you to set the position of the toolbar</td>
+<td><strong>Only for toolbar.&nbsp;</strong>Allows you to set the position of toolbar</td>
 </tr>
 <tr>
 <td>overlay</td>
@@ -183,7 +183,7 @@ Options
 </tr>
 <tr>
 <td>show</td>
-<td>scroll.start/<strong>scroll.end</strong>/page.ready/{ afterElement: [element] }/[number]</td>
+<td>scroll.start/scroll.end/page.ready/{ afterElement: [element] }/[number]</td>
 <td>
 <p><strong>scroll.start -&nbsp;</strong>When starts scrolling</p>
 <p><strong>scroll.end -&nbsp;</strong>Show component when we come to end of the page</p>
@@ -196,7 +196,7 @@ Options
 <tr>
 <td>offset_show</td>
 <td>number (Support percent) / function</td>
-<td>Example offset_show:-100. Show the component before 100px, when we scroll to the end of the page</td>
+<td>Example offset_show:-100. Show component before 100px, when we scroll to the end of the page</td>
 </tr>
 <tr>
 <td>offset_position</td>
@@ -206,7 +206,7 @@ Options
 <p>}</p>
 </td>
 <td>
-<p><strong>Only for toolbar.</strong><br>Offset for the component position.</p>
+<p>Offset for component position.</p>
 <p><strong>Default:&nbsp;</strong>20px.</p>
 </td>
 </tr>
@@ -214,7 +214,7 @@ Options
 <td>skin</td>
 <td>&nbsp;</td>
 <td>
-<p>Set custom view for the component</p>
+<p>Set custom view for component</p>
 <p>Default value: default (r1sp--default).</p>
 <p>Example: skin: 'gennewlayout' = &lt;div class="r1sp--gennewlayout"&gt;&lt;/div&gt;</p>
 </td>
@@ -228,49 +228,8 @@ Options
 <td>template</td>
 <td>&nbsp;</td>
 <td>
-<p>Template for the component. Placeholder {{widget}} init post_widget</p>
+<p>Template for component. Placeholder {{widget}} init post_widget</p>
 <p><strong>Default:</strong>'&lt;a class="r1sp__close" data-action="close"&gt;&lt;/a&gt;&lt;div class="r1sp__share-inl"&gt;Share with friends:&lt;/div&gt; {{widget}}'</p>
-</td>
-</tr>
-<tr>
-<td>mobile</td>
-<td>true/false/options</td>
-<td>
-<p>Option <strong>false</strong>: Disable the SharePrompt on a mobile devices</p>
-
-<p>Option <strong>true</strong>: Set the SharePrompt with preset config</p>
-
-<pre>
-{
-    template: '&lt;div class="r1sp__def-mv"&gt;&lt;div class="r1sp__def-mv__prepend"&gt;Share:&lt;/div&gt;&lt;div class="r1sp__def-mv__widget"&gt;{{widget}}&lt;/div&gt;&lt;div class="r1sp__def-mv__append"&gt;&lt;a class="r1sp__close" data-action="close"&gt;&lt;/a&gt;&lt;/div&gt;',
-    type: config.typeClasses.toolbar,
-    overlay: false,
-    position: 'bottom',
-    offset_position: {
-         bottom: 0,
-         right: 0,
-         left: 0,
-         top: 0
-    },
-    post_widget: {
-        buttons: [{id:'facebook', look:'native'}, {id:'twitter', look:'native'}, {id:'linkedin', look:'native'}, {id:'mail', look:'native'}, {id:'post-share', look:'native'}],
-        size: 'xlarge',
-        counter:'none'
-    }
-}
-</pre>
-
-<p>Or you can use custom options for a mobile devices.</p>
-
-<pre>
-  mobile: {
-      type: 'lightbox',
-      ....
-  }
-</pre>
-
-<p>If not set, we are showing the SharePrompt with global options</p>
-
 </td>
 </tr>
 </tbody>
@@ -352,24 +311,20 @@ You can use JS API functions to call for components.
 </thead>
 <tbody>
 <tr>
-<td>sharePromptJsApi.changeConfig(options)</td>
-<td>Init the component with options using current config</td>
-</tr>
-<tr>
 <td>sharePromptJsApi.activate(options)</td>
-<td>Init the component with options using default config</td>
+<td>Init component with options.</td>
 </tr>
 <tr>
 <td>sharePromptJsApi.deactivate()</td>
-<td>Remove the component from DOM</td>
+<td>Remove component from DOM</td>
 </tr>
 <tr>
 <td>sharePromptJsApi.show()</td>
-<td>Show the SharePrompt</td>
+<td>Show component</td>
 </tr>
 <tr>
 <td>sharePromptJsApi.hide()</td>
-<td>Hide the SharePrompt</td>
+<td>Hide component</td>
 </tr>
 </tbody>
 </table>
