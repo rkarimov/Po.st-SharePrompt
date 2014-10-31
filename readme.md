@@ -17,6 +17,18 @@ Installation
 2. Add share-prompt.min.js before `</body>` `<script src="share-prompt.min.js"></script>`.
 3. Add component's script with options
 
+Warnings for Mobile
+============
+ Do not use this extension with the following plugins : 
+- Vibrant Media (Wordpress) 
+- Any type of Ads pinned to the Footer
+- Info links (Wordpress)
+- any type of media that comes out of the footer
+
+in general just don't use anything that is pinned to the footer, when using this extension 
+try to avoid minifying the code, it can sometimes cause issues with W3 cach plugin and older browsers.
+
+
 ```
 <script>
 window.sharePromptConfig = {
