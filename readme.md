@@ -9,14 +9,6 @@ To install the SharePrompt feature you will need to copy, host, and reference a 
 
 This feature can be used by itself or as an additional feature with your existing Po.st Sharing Tool integration.
 
-
-Installation
-------------
-
-1. Add r1sp.css to `<HEAD>` section `<link rel="stylesheet" href="r1sp.css" />`.
-2. Add share-prompt.min.js before `</body>` `<script src="share-prompt.min.js"></script>`.
-3. Add component's script with options
-
 Warnings for Mobile
 ============
  Do not use this extension with the following plugins : 
@@ -28,6 +20,12 @@ Warnings for Mobile
 in general just don't use anything that is pinned to the footer, when using this extension 
 try to avoid minifying the code, it can sometimes cause issues with W3 cache plugin and older browsers.
 
+Installation
+------------
+
+1. Add r1sp.css to `<HEAD>` section `<link rel="stylesheet" href="r1sp.css" />`.
+2. Add share-prompt.min.js before `</body>` `<script src="share-prompt.min.js"></script>`.
+3. Add component's script with options
 
 ```
 <script>
