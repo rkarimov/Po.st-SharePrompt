@@ -26,7 +26,7 @@ Warnings for Mobile
 - any type of media that comes out of the footer
 
 in general just don't use anything that is pinned to the footer, when using this extension 
-try to avoid minifying the code, it can sometimes cause issues with W3 cach plugin and older browsers.
+try to avoid minifying the code, it can sometimes cause issues with W3 cache plugin and older browsers.
 
 
 ```
